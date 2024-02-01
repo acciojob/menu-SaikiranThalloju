@@ -94,10 +94,10 @@ const App = () => {
         <div>
             <h1>Our Menu</h1>
             <div className='categories'>
-                <h3 onClick={() => filterItems('All')}>All</h3>
-                <h3 onClick={() => filterItems('breakfast')}>Breakfast</h3>
-                <h3 onClick={() => filterItems('lunch')}>Lunch</h3>
-                <h3 onClick={() => filterItems('shakes')}>Shakes</h3>
+                <h3 id='main' onClick={() => filterItems('All')}>All</h3>
+                <h3 id='filter-btn-1' onClick={() => filterItems('breakfast')}>Breakfast</h3>
+                <h3 id='filter-btn-2' onClick={() => filterItems('lunch')}>Lunch</h3>
+                <h3 id = "filter-btn-3"  onClick={() => filterItems('shakes')}>Shakes</h3>
             </div>
             {
                 category.map((item) => (
