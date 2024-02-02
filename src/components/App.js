@@ -101,7 +101,7 @@ const App = () => {
             </div>
             {
                 category.map((item) => (
-                    <div key={item.id}>
+                    <div data-test-id = {`menu-item-${item.category}`} key={item.id}>
                         <img src={item.img} alt={item.title} />
                         <div>
                             <h4>{item.title}</h4>
